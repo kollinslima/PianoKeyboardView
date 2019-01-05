@@ -47,3 +47,8 @@ To use PianoKeyboardView, follow these steps:
 >      }
 > });
 >```
+
+### Result
+
+![SampleScreenshot](https://drive.google.com/uc?export=view&id=1k16pDssJUSwQm-CXmnaqFMCh7YYuL9fp)
+
