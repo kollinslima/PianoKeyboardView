@@ -46,19 +46,6 @@ public class PianoKeyboardView extends View {
     private float y;
     private Key auxKey;
 
-//    public PianoKeyboardView(Context context) {
-//        super(context);
-//        black = new Paint();
-//        black.setColor(Color.BLACK);
-//        white = new Paint();
-//        white.setColor(Color.WHITE);
-//        white.setStyle(Paint.Style.FILL);
-//        pressedColor = new Paint();
-//        pressedColor.setColor(Color.YELLOW);
-//        pressedColor.setStyle(Paint.Style.FILL);
-//        numberKeys = 15;
-//    }
-
     public PianoKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray arr = context.obtainStyledAttributes(attrs, R.styleable.PianoKeyboardView);
@@ -67,7 +54,7 @@ public class PianoKeyboardView extends View {
         white = new Paint();
         white.setColor(arr.getColor(R.styleable.PianoKeyboardView_whiteKeyColor, Color.WHITE));
         pressedColor = new Paint();
-        pressedColor.setColor(arr.getColor(R.styleable.PianoKeyboardView_whiteKeyColor, Color.YELLOW));
+        pressedColor.setColor(arr.getColor(R.styleable.PianoKeyboardView_pressedColor, Color.YELLOW));
         pressedColor.setStyle(Paint.Style.FILL);
         numberKeys = arr.getInteger(R.styleable.PianoKeyboardView_numKeys, 15);
         midiStart = arr.getInteger(R.styleable.PianoKeyboardView_midiStart, 60);
