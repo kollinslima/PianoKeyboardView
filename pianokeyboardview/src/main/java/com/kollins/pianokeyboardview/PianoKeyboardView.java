@@ -68,6 +68,9 @@ public class PianoKeyboardView extends View {
         int midiShift = 0;
         RectF key;
 
+        whites.clear();
+        blacks.clear();
+
         whiteWidth = w / numberKeys;
         height = h;
 
