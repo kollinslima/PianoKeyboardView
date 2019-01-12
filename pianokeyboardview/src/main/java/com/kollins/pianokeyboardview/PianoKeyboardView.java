@@ -280,6 +280,14 @@ public class PianoKeyboardView extends View {
         this.white = newColor;
     }
 
+    public int getMidiStart() {
+        return midiStart;
+    }
+
+    public void setMidiStart(int midiStart) {
+        this.midiStart = midiStart;
+    }
+
     public void setKeyEventListener(OnKeyChangeListener keyEventListener) {
         this.keyEventListener = keyEventListener;
     }
